@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 
 @NgModule({
@@ -17,7 +18,7 @@ import 'hammerjs';
     BrowserModule,
     FormsModule, ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule, FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

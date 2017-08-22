@@ -36,6 +36,8 @@
   </md-card-actions>
 </md-card>
 
+
+
 <form class="example-form">
   <md-input-container class="example-full-width">
     <input mdInput placeholder="Company (disabled)" disabled value="Google">
@@ -83,3 +85,56 @@
 </form>
 
 <p>Form value: {{ heroForm.value | json }}</p>
+
+<md-grid-list cols="3" rowHeight="4:2">
+  <md-grid-tile>1</md-grid-tile>
+  <md-grid-tile>2</md-grid-tile>
+  <md-grid-tile>3</md-grid-tile>
+  <md-grid-tile>4</md-grid-tile>
+  <md-grid-tile>4</md-grid-tile>
+  <md-grid-tile>4</md-grid-tile>
+  <md-grid-tile>4</md-grid-tile>
+</md-grid-list>
+
+
+  <div fxLayout="row">   
+    <div fxFlex="50%">50</div>
+    <div fxFlex="50%">50</div>
+    
+  </div>          
+
+
+
+  <div fxLayout="row wrap" class="colored box nopad" >
+    <div fxFlex="none">     [flex="none"]       </div>
+    <div fxFlex>            [flex]              </div>
+    <div fxFlex="nogrow">   [flex="nogrow"]     </div>
+    <div fxFlex="grow">     [flex="grow"]       </div>
+    
+    <div fxFlex="33.33%">   [flex="33.33%"]     </div>
+    <div fxFlex="33.33%">   [flex="33.33%"]     </div>
+    <div fxFlex="33.33%">   [flex="33.33%"]     </div>
+    
+  </div>          
+
+
+  <div
+  fxFlex
+  class="fxClass-all"
+  class.xs="fxClass-xs"
+  [class.sm]="{'fxClass-sm': hasStyle}"
+  [class.md]="{'fxClass-md': hasStyle, 'fxClass-md2': hasStyle}"
+  [class.lg]="['fxClass-lg', 'fxClass-lg2']">hola1
+</div>
+
+
+<div
+style="font-style: italic"
+[style.xs]="{'font-size.px': 10, color: 'blue'}"
+[style.sm]="{'font-size.px': 20, color: 'green'}"
+[style.md]="{'font-size.px': 30, color: 'orange'}"
+[style.lg]="styleLgExp">hola2
+</div>
+
+
+<div fxFlex="100%" fxFlex.gt-xs="50%" class="hola">hoooola</div>
